@@ -16,6 +16,7 @@ See the Mulan PSL v2 for more details. */
 #include "common/lang/limits.h"
 #include "common/value.h"
 
+
 int FloatType::compare(const Value &left, const Value &right) const
 {
   ASSERT(left.attr_type() == AttrType::FLOATS, "left type is not integer");
