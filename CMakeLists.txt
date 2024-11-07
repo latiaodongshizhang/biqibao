@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 add_definitions("-Wall -g")
+=======
+>>>>>>> 9172074180a6beef223828077dd35ad072f73a10
 cmake_minimum_required(VERSION 3.10)
 set(CMAKE_CXX_STANDARD 20)
 

@@ -202,8 +202,11 @@ public:
    */
   RC close_file();
 
+<<<<<<< HEAD
   void remove_file();
 
+=======
+>>>>>>> 9172074180a6beef223828077dd35ad072f73a10
   /**
    * 根据文件ID和页号获取指定页面到缓冲区，返回页面句柄指针。
    */
@@ -331,7 +334,10 @@ public:
   RC create_file(const char *file_name);
   RC open_file(LogHandler &log_handler, const char *file_name, DiskBufferPool *&bp);
   RC close_file(const char *file_name);
+<<<<<<< HEAD
   RC remove_file(const char *file_name);
+=======
+>>>>>>> 9172074180a6beef223828077dd35ad072f73a10
 
   RC flush_page(Frame &frame);
 

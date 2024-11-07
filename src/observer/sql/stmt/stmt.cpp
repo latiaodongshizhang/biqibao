@@ -15,7 +15,10 @@ See the Mulan PSL v2 for more details. */
 #include "sql/stmt/stmt.h"
 #include "common/log/log.h"
 #include "sql/stmt/calc_stmt.h"
+<<<<<<< HEAD
 #include "sql/stmt/drop_table_stmt.h"
+=======
+>>>>>>> 9172074180a6beef223828077dd35ad072f73a10
 #include "sql/stmt/create_index_stmt.h"
 #include "sql/stmt/create_table_stmt.h"
 #include "sql/stmt/delete_stmt.h"
@@ -24,7 +27,10 @@ See the Mulan PSL v2 for more details. */
 #include "sql/stmt/explain_stmt.h"
 #include "sql/stmt/help_stmt.h"
 #include "sql/stmt/insert_stmt.h"
+<<<<<<< HEAD
 #include "sql/stmt/update_stmt.h"
+=======
+>>>>>>> 9172074180a6beef223828077dd35ad072f73a10
 #include "sql/stmt/load_data_stmt.h"
 #include "sql/stmt/select_stmt.h"
 #include "sql/stmt/set_variable_stmt.h"
@@ -57,11 +63,14 @@ RC Stmt::create_stmt(Db *db, ParsedSqlNode &sql_node, Stmt *&stmt)
     case SCF_DELETE: {
       return DeleteStmt::create(db, sql_node.deletion, stmt);
     }
+<<<<<<< HEAD
     
     case SCF_UPDATE: {
       return UpdateStmt::create(db, sql_node.update, stmt);
     }
 
+=======
+>>>>>>> 9172074180a6beef223828077dd35ad072f73a10
     case SCF_SELECT: {
       return SelectStmt::create(db, sql_node.selection, stmt);
     }
@@ -78,10 +87,13 @@ RC Stmt::create_stmt(Db *db, ParsedSqlNode &sql_node, Stmt *&stmt)
       return CreateTableStmt::create(db, sql_node.create_table, stmt);
     }
 
+<<<<<<< HEAD
 case SCF_DROP_TABLE: {
       return DropTableStmt::create(db, sql_node.drop_table, stmt);
     }
 
+=======
+>>>>>>> 9172074180a6beef223828077dd35ad072f73a10
     case SCF_DESC_TABLE: {
       return DescTableStmt::create(db, sql_node.desc_table, stmt);
     }

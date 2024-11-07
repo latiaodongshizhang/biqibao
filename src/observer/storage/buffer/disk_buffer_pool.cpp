@@ -309,10 +309,13 @@ RC DiskBufferPool::close_file()
   return RC::SUCCESS;
 }
 
+<<<<<<< HEAD
 void DiskBufferPool::remove_file(){
   bp_manager_.remove_file (file_name_.c_str());
 }
 
+=======
+>>>>>>> 9172074180a6beef223828077dd35ad072f73a10
 RC DiskBufferPool::get_this_page(PageNum page_num, Frame **frame)
 {
   RC rc  = RC::SUCCESS;
@@ -890,6 +893,7 @@ RC BufferPoolManager::close_file(const char *_file_name)
   return RC::SUCCESS;
 }
 
+<<<<<<< HEAD
 RC BufferPoolManager::remove_file(const char*file_name)
 {
   close_file(file_name);
@@ -897,6 +901,8 @@ RC BufferPoolManager::remove_file(const char*file_name)
   return RC::SUCCESS;
 }
 
+=======
+>>>>>>> 9172074180a6beef223828077dd35ad072f73a10
 RC BufferPoolManager::flush_page(Frame &frame)
 {
   int buffer_pool_id = frame.buffer_pool_id();

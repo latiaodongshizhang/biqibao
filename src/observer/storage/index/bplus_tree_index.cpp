@@ -80,6 +80,7 @@ RC BplusTreeIndex::close()
   return RC::SUCCESS;
 }
 
+<<<<<<< HEAD
 void BplusTreeIndex::destroy()
 {
   if (inited_) {
@@ -91,6 +92,8 @@ void BplusTreeIndex::destroy()
   
 }
 
+=======
+>>>>>>> 9172074180a6beef223828077dd35ad072f73a10
 RC BplusTreeIndex::insert_entry(const char *record, const RID *rid)
 {
   return index_handler_.insert_entry(record + field_meta_.offset(), rid);

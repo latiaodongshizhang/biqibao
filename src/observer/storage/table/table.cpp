@@ -127,6 +127,7 @@ RC Table::create(Db *db, int32_t table_id, const char *path, const char *name, c
   return rc;
 }
 
+<<<<<<< HEAD
 RC Table::drop(const char *path)
 {
   if(::remove(path)<0){
@@ -152,6 +153,8 @@ RC Table::drop(const char *path)
   return RC::SUCCESS;
 }
 
+=======
+>>>>>>> 9172074180a6beef223828077dd35ad072f73a10
 RC Table::open(Db *db, const char *meta_file, const char *base_dir)
 {
   // 加载元数据文件

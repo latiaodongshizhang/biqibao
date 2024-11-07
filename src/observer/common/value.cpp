@@ -125,10 +125,13 @@ void Value::set_data(char *data, int length)
       value_.bool_value_ = *(int *)data != 0;
       length_            = length;
     } break;
+<<<<<<< HEAD
     case AttrType::DATES: {
       value_.int_value_=*(int*)data;
       length_          =length;
     }break;
+=======
+>>>>>>> 9172074180a6beef223828077dd35ad072f73a10
     default: {
       LOG_WARN("unknown data type: %d", attr_type_);
     } break;

@@ -110,7 +110,10 @@ ROLLBACK                                RETURN_TOKEN(TRX_ROLLBACK);
 INT                                     RETURN_TOKEN(INT_T);
 CHAR                                    RETURN_TOKEN(STRING_T);
 FLOAT                                   RETURN_TOKEN(FLOAT_T);
+<<<<<<< HEAD
 DATE                                    RETURN_TOKEN(DATE_T);
+=======
+>>>>>>> 9172074180a6beef223828077dd35ad072f73a10
 VECTOR                                  RETURN_TOKEN(VECTOR_T);
 LOAD                                    RETURN_TOKEN(LOAD);
 DATA                                    RETURN_TOKEN(DATA);

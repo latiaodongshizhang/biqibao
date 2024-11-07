@@ -138,7 +138,11 @@ RC Db::init(const char *name, const char *dbpath, const char *trx_kit_name, cons
 
 RC Db::create_table(const char *table_name, span<const AttrInfoSqlNode> attributes, const StorageFormat storage_format)
 {
+<<<<<<< HEAD
    RC rc = RC::SUCCESS;
+=======
+  RC rc = RC::SUCCESS;
+>>>>>>> 9172074180a6beef223828077dd35ad072f73a10
   // check table_name
   if (opened_tables_.count(table_name) != 0) {
     LOG_WARN("%s has been opened before.", table_name);
@@ -161,6 +165,7 @@ RC Db::create_table(const char *table_name, span<const AttrInfoSqlNode> attribut
   return RC::SUCCESS;
 }
 
+<<<<<<< HEAD
 RC Db::drop_table(const char*table_name)
 {
   // check table_name
@@ -183,6 +188,8 @@ RC Db::drop_table(const char*table_name)
   return RC::SUCCESS;
 }
 
+=======
+>>>>>>> 9172074180a6beef223828077dd35ad072f73a10
 Table *Db::find_table(const char *table_name) const
 {
   unordered_map<string, Table *>::const_iterator iter = opened_tables_.find(table_name);

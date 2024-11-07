@@ -39,7 +39,10 @@ class Index
 public:
   Index()          = default;
   virtual ~Index() = default;
+<<<<<<< HEAD
   virtual void destroy()=0;
+=======
+>>>>>>> 9172074180a6beef223828077dd35ad072f73a10
 
   virtual RC create(Table *table, const char *file_name, const IndexMeta &index_meta, const FieldMeta &field_meta)
   {

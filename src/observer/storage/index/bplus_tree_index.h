@@ -30,7 +30,10 @@ public:
   RC create(Table *table, const char *file_name, const IndexMeta &index_meta, const FieldMeta &field_meta) override;
   RC open(Table *table, const char *file_name, const IndexMeta &index_meta, const FieldMeta &field_meta) override;
   RC close();
+<<<<<<< HEAD
   void destroy() override;
+=======
+>>>>>>> 9172074180a6beef223828077dd35ad072f73a10
 
   RC insert_entry(const char *record, const RID *rid) override;
   RC delete_entry(const char *record, const RID *rid) override;

@@ -975,6 +975,7 @@ RC BplusTreeHandler::close()
   return RC::SUCCESS;
 }
 
+<<<<<<< HEAD
 void BplusTreeHandler::destroy()
 {
   if (disk_buffer_pool_ != nullptr) {
@@ -985,6 +986,8 @@ void BplusTreeHandler::destroy()
   
 }
 
+=======
+>>>>>>> 9172074180a6beef223828077dd35ad072f73a10
 RC BplusTreeHandler::print_leaf(Frame *frame)
 {
   BplusTreeMiniTransaction mtr(*this);
