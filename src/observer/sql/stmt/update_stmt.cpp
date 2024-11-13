@@ -13,13 +13,10 @@ See the Mulan PSL v2 for more details. */
 //
 
 #include "sql/stmt/update_stmt.h"
-<<<<<<< HEAD
 #include "common/log/log.h"
 #include "storage/db/db.h"
 #include "storage/table/table.h"
 
-=======
->>>>>>> 9172074180a6beef223828077dd35ad072f73a10
 
 UpdateStmt::UpdateStmt(Table *table, Value *values, int value_amount)
     : table_(table), values_(values), value_amount_(value_amount)
@@ -27,7 +24,6 @@ UpdateStmt::UpdateStmt(Table *table, Value *values, int value_amount)
 
 RC UpdateStmt::create(Db *db, const UpdateSqlNode &update, Stmt *&stmt)
 {
-<<<<<<< HEAD
   const char *table_name = update.relation_name.c_str();
   if (nullptr == db || nullptr == table_name || update.values.empty()) {
     LOG_WARN("invalid argument. db=%p, table_name=%p, value_num=%d",
@@ -53,11 +49,9 @@ RC UpdateStmt::create(Db *db, const UpdateSqlNode &update, Stmt *&stmt)
   }
 
   // everything alright
-  stmt = new UpdateStmt(table, values, value_num);
+  stmt = new UpdateStmt(table, Value, value_num);
   return RC::SUCCESS;
-=======
->>>>>>> 9172074180a6beef223828077dd35ad072f73a10
   // TODO
-  stmt = nullptr;
-  return RC::INTERNAL;
+  //stmt = nullptr;
+  //return RC::INTERNAL;
 }

@@ -89,10 +89,7 @@ UnboundAggregateExpr *create_aggregate_expression(const char *aggregate_name,
         INT_T
         STRING_T
         FLOAT_T
-<<<<<<< HEAD
         DATE_T
-=======
->>>>>>> 9172074180a6beef223828077dd35ad072f73a10
         VECTOR_T
         HELP
         EXIT
@@ -366,10 +363,7 @@ type:
     | STRING_T { $$ = static_cast<int>(AttrType::CHARS); }
     | FLOAT_T  { $$ = static_cast<int>(AttrType::FLOATS); }
     | VECTOR_T { $$ = static_cast<int>(AttrType::VECTORS); }
-<<<<<<< HEAD
     | DATE_T   { $$= static_cast<int>(AttrType::DATES);}
-=======
->>>>>>> 9172074180a6beef223828077dd35ad072f73a10
     ;
 insert_stmt:        /*insert   语句的语法解析树*/
     INSERT INTO ID VALUES LBRACE value value_list RBRACE 

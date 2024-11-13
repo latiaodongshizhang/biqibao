@@ -65,10 +65,7 @@ public:
    */
   RC create_table(const char *table_name, span<const AttrInfoSqlNode> attributes,
       const StorageFormat storage_format = StorageFormat::ROW_FORMAT);
-<<<<<<< HEAD
   RC drop_table(const char *table_name);
-=======
->>>>>>> 9172074180a6beef223828077dd35ad072f73a10
 
   /**
    * @brief 根据表名查找表

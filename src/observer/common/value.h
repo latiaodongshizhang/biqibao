@@ -35,10 +35,7 @@ public:
   friend class BooleanType;
   friend class CharType;
   friend class VectorType;
-<<<<<<< HEAD
   friend class DateType;
-=======
->>>>>>> 9172074180a6beef223828077dd35ad072f73a10
 
   Value() = default;
 
@@ -94,14 +91,11 @@ public:
   void set_data(const char *data, int length) { this->set_data(const_cast<char *>(data), length); }
   void set_value(const Value &value);
   void set_boolean(bool val);
-<<<<<<< HEAD
   void set_date(int y,int m,int d){
     //yyyymmdd
     value_.int_value_=y*10000+m*100+d;
     attr_type_=AttrType::DATES;
   }
-=======
->>>>>>> 9172074180a6beef223828077dd35ad072f73a10
 
   string to_string() const;
 
